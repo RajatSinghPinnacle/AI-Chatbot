@@ -1,0 +1,10 @@
+.toolbar-title {
+    font-size: 1.5rem;
+    font-family: emoji;
+    margin-right: 16px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
