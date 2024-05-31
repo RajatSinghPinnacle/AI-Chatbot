@@ -1,1 +1,7 @@
-<p>chatbot works!</p>
+<div class="chat-container">
+  <main class="chat-main">
+    <app-message-box [messages]="messages"></app-message-box>
+    <app-input-box (sendMessage)="sendData($event)"></app-input-box>
+  </main>
+  </div> 
+  
