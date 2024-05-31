@@ -1,0 +1,14 @@
+{
+    "profile": {
+      "name": "Rajat Singh",
+      "bio": "A brief bio about the user goes here.",
+      "jobTitle": "Frontend Engineer Intern",
+      "company": "Pinnacle Way",
+      "avatarSrc": "assets/images/back.jpg"
+    },
+    "contact": {
+      "email": "rajatsingh@123gmail.com",
+      "phone": "+91 74280-58226",
+      "location": "Gurugram, India"
+    }
+  }

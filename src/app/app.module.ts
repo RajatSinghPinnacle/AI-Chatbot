@@ -3,17 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './Components/home/home.component';
-import { UserProfileComponent } from './Components/user-profile/user-profile.component';
-import { ChatbotComponent } from './Components/chatbot/chatbot.component';
-import { HeaderComponent } from './Components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { ChatbotComponent } from './components/chatbot/chatbot.component';
+import { HeaderComponent } from './components/header/header.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { MaterialModule } from './Modules/material/material.module';
+import { MaterialModule } from './modules/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MessageBoxComponent } from './Components/chatbot/message-box/message-box.component';
-import { InputBoxComponent } from './Components/chatbot/input-box/input-box.component';
-import { EditProfileComponent } from './Components/user-profile/edit-profile/edit-profile.component';
-import { SettingComponent } from './Components/user-profile/setting/setting.component';
+import { MessageBoxComponent } from './components/chatbot/message-box/message-box.component';
+import { InputBoxComponent } from './components/chatbot/input-box/input-box.component';
+import { EditProfileComponent } from './components/user-profile/edit-profile/edit-profile.component';
+import { SettingComponent } from './components/user-profile/setting/setting.component';
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './Components/home/home.component';
-import { UserProfileComponent } from './Components/user-profile/user-profile.component';
-import { ChatbotComponent } from './Components/chatbot/chatbot.component';
-import { EditProfileComponent } from './Components/user-profile/edit-profile/edit-profile.component';
-import { SettingComponent } from './Components/user-profile/setting/setting.component';
+import { HomeComponent } from './components/home/home.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { ChatbotComponent } from './components/chatbot/chatbot.component';
+import { EditProfileComponent } from './components/user-profile/edit-profile/edit-profile.component';
+import { SettingComponent } from './components/user-profile/setting/setting.component';
 
 const routes: Routes = [
   { path: '', component: ChatbotComponent, pathMatch: 'full' },

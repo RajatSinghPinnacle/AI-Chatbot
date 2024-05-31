@@ -1,5 +1,0 @@
-<div class="chat-messages" *ngIf="messages.length > 0">
-    <div class="message" *ngFor="let message of messages">
-      <p [ngClass]="{'user-message': message.isUser, 'bot-message': !message.isUser}">{{ message.text }}</p>
-    </div>
-  </div>
