@@ -1,0 +1,61 @@
+<button mat-raised-button class="back-button" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+</button>
+<br><br>
+<div class="edit-profile-container mat-elevation-z3">
+    <h2 class="edit-profile-title">Edit Profile</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+          <div style="padding:20px">
+            <mat-form-field appearance="fill">
+                <mat-label>Photo</mat-label>
+                <div class="fileUploadContainer" [ngStyle]="{'margin-top' : profileForm.get('photo')!.value ? '5px' :  '20px'}">
+                    <ng-container *ngIf="profileForm.get('photo')!.value">
+                        <img [src]="profileForm.get('photo')!.value" alt="User profile pic"/>
+                        <button class="deleteButton" mat-icon-button (click)="clearFileInput()">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                    </ng-container>
+                    <div *ngIf="!profileForm.get('photo')!.value" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+                        <mat-icon style="opacity: 60%;">file_upload</mat-icon>
+                        <button mat-raised-button color="primary" style="width:100%; opacity: 80%;">Browse</button>
+                        <small style="margin: 20px">Drag and drop here</small>
+                    </div>
+                    <input #fileInput class="fileInput" type="file" multiple="multiple" accept="image/*" (change)="setFileData($event)" />
+                </div>
+                <input matInput formControlName="photo" readonly [hidden]="true" />
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="form_field" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" placeholder="Name">
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="form_field" appearance="fill">
+                <mat-label>Bio</mat-label>
+                <textarea matInput formControlName="bio" placeholder="Bio"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="form_field" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" placeholder="Email">
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="form_field" appearance="fill">
+                <mat-label>Phone</mat-label>
+                <input matInput formControlName="phone" placeholder="Phone">
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="form_field" appearance="fill">
+                <mat-label>Location</mat-label>
+                <input matInput formControlName="location" placeholder="Location">
+            </mat-form-field>
+        </div>
+      
+        <button mat-raised-button color="primary" type="submit" [disabled]="profileForm.invalid">Save Changes</button>
+    </form>
+</div>

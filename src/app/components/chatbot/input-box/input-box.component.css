@@ -1,0 +1,15 @@
+.message-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  #sendButton.send-button{
+    border-radius: 17px;
+     background-color: #0b589bda;
+      bottom: 10px;
+  }
+  .chat-input {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+  }
